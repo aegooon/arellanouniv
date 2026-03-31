@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics | Arellano University</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="acadstyles.css">   
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-flex">
+            <a href="#" class="logo-group">
+                <img src="AU logo.png" alt="Arellano University Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Arellano University</h1>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about us.html">About Us</a>
+                <a href="academics.html">Academics</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="#">News</a>
+                <a href="#">Research</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-intro">
+            <div class="breadcrumb">Home / Academics / <span id="breadcrumb-current">Elementary and Junior High</span></div>
+            <h1 class="page-title" id="main-title">Elementary and Junior High School</h1>
+        </div>
+
+        <div class="content-layout">
+            <aside class="sidebar">
+                <div class="sidebar-header">Academics</div>
+                <ul class="sidebar-nav">
+                    <li><button id="btn-elem" class="active" onclick="switchTab('elem')">Elementary & Junior High</button></li>
+                    <li><button id="btn-shs" onclick="switchTab('shs')">Senior High School</button></li>
+                    <li><button id="btn-undergrad" onclick="switchTab('undergrad')">Undergraduate Programs</button></li>
+                    <li><button id="btn-grad" onclick="switchTab('grad')">Graduate School</button></li>
+                    <li><button disabled>ETEEAP</button></li>
+                    <li><button disabled>International Nursing</button></li>
+                    <li><button disabled>International Programs</button></li>
+                </ul>
+            </aside>
+
+            <main class="main-content">
+                
+                <!-- View: Elementary and Junior High -->
+                <div id="view-elem" class="section-view active">
+                    <p class="section-intro-text">
+                        The Basic Education department of Arellano University offers a structured learning environment from Pre-School to Grade 10, ensuring students develop the necessary foundational skills before proceeding to specialized tracks in Senior High.
+                    </p>
+
+                    <div class="academic-block">
+                        <div class="academic-label">Elementary Department</div>
+                        <div class="academic-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=1200" alt="Elementary School">
+                        </div>
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <h4>Elementary Program</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-gray);">Building strong foundations in literacy, numeracy, and character development.</p>
+                                <ul style="margin-top: 10px;">
+                                    <li>Pre-School (Nursery / Kinder)</li>
+                                    <li>Primary Levels (Grades 1-3)</li>
+                                    <li>Intermediate Levels (Grades 4-6)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="academic-block">
+                        <div class="academic-label">Junior High School</div>
+                        <div class="academic-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=1200" alt="Junior High School">
+                        </div>
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <h4>High School Program</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-gray);">Transitioning students to more complex academic disciplines and social responsibility.</p>
+                                <ul style="margin-top: 10px;">
+                                    <li>Grades 7 to 10</li>
+                                    <li>Science and Technology Focus</li>
+                                    <li>Extracurricular and Leadership Training</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View: Senior High School -->
+                <div id="view-shs" class="section-view">
+                    <p class="section-intro-text">
+                        Arellano University's Senior High School program offers a diverse range of tracks and strands designed to prepare students for college life, professional careers, and entrepreneurial ventures.
+                    </p>
+
+                    <!-- STEM -->
+                    <div class="program-card">
+                        <div class="program-visual">
+                            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=600" alt="STEM">
+                            <span class="program-badge">Academic Track</span>
+                        </div>
+                        <div class="program-info">
+                            <h3>STEM (Science, Technology, Engineering, and Mathematics)</h3>
+                            <p>Tailored for students aiming for careers in medicine, engineering, pure sciences, and technology. The curriculum emphasizes advanced mathematics, calculus, and scientific research methodologies.</p>
+                            <a href="#" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+
+                    <!-- ABM -->
+                    <div class="program-card">
+                        <div class="program-visual">
+                            <img src="AU logo.png" alt="ABM">
+                            <span class="program-badge">Academic Track</span>
+                        </div>
+                        <div class="program-info">
+                            <h3>ABM (Accountancy, Business, and Management)</h3>
+                            <p>Focused on the corporate and entrepreneurial world. Students learn the fundamentals of financial management, accounting, and business operations to lead in the global marketplace.</p>
+                            <a href="#" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+
+                    <!-- HUMSS -->
+                    <div class="program-card">
+                        <div class="program-visual">
+                            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&q=80&w=600" alt="HUMSS">
+                            <span class="program-badge">Academic Track</span>
+                        </div>
+                        <div class="program-info">
+                            <h3>HUMSS (Humanities and Social Sciences)</h3>
+                            <p>Perfect for those pursuing legal studies, education, journalism, or social work. This strand develops critical thinking, creative writing, and understanding of societal structures.</p>
+                            <a href="#" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+
+                    <!-- GAS -->
+                    <div class="program-card">
+                        <div class="program-visual">
+                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=600" alt="GAS">
+                            <span class="program-badge">Academic Track</span>
+                        </div>
+                        <div class="program-info">
+                            <h3>GAS (General Academic Strand)</h3>
+                            <p>A flexible strand for students exploring multiple interests. It offers electives from different tracks, allowing a broader preparation for various college degrees.</p>
+                            <a href="#" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+
+                    <!-- TVL -->
+                    <div class="program-card">
+                        <div class="program-visual">
+                            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=600" alt="TVL">
+                            <span class="program-badge">TVL Track</span>
+                        </div>
+                        <div class="program-info">
+                            <h3>Technical-Vocational-Livelihood (TVL)</h3>
+                            <p>Direct skills training for immediate employment or specialized technical careers. Tracks include ICT (Programming/Animation) and Home Economics (Culinary/Tourism).</p>
+                            <a href="#" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View: Undergraduate Programs -->
+                <div id="view-undergrad" class="section-view">
+                    <div class="program-card">
+                        <div class="program-visual"><img src="AU logo.png" alt="Nursing"></div>
+                        <div class="program-info">
+                            <h3>College of Nursing</h3>
+                            <p>Arellano University’s College of Nursing is recognized for its high passing rates and global partnerships, preparing world-class healthcare professionals through clinical excellence.</p>
+                            <a href="#" class="btn-know-more">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-visual"><img src="AU logo.png" alt="Law"></div>
+                        <div class="program-info">
+                            <h3>College of Law</h3>
+                            <p>A premier institution for legal education, molding ethical and competent lawyers through a rigorous curriculum and practical training in litigation and corporate law.</p>
+                            <a href="#" class="btn-know-more">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View: Graduate School -->
+                <div id="view-grad" class="section-view">
+                    <!-- Graduate School of Business -->
+                    <div class="program-card">
+                        <div class="program-visual" style="background: #fff; padding: 20px;">
+                            <img src="AU logo.png" alt="Arellano University Seal" style="object-fit: contain;">
+                        </div>
+                        <div class="program-info">
+                            <h3>Graduate School of Business</h3>
+                            <p>A development-oriented program producing competent managers who act as custodians of resources for national and business development.</p>
+                            <a href="#" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+
+                    <!-- Graduate School of Education -->
+                    <div class="program-card">
+                        <div class="program-visual" style="background: #fff; padding: 20px;">
+                            <img src="AU logo.png" alt="Arellano University Seal" style="object-fit: contain;">
+                        </div>
+                        <div class="program-info">
+                            <h3>Graduate School of Education</h3>
+                            <p>Offering Masteral and Doctoral levels since 1947, focusing on educational leadership, curriculum development, and teaching excellence.</p>
+                            <a href="#" class="btn-know-more">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+<footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- Brand Col -->
+                <div class="footer-brand">
+                    <div class="logo-wrapper">
+                        <div class="logo-icon">
+                            <img src="AU logo.png" alt="Logo" class="logo-img">
+                        </div>
+                        <div class="logo-text">
+                            <h1>Arellano</h1>
+                            <h2>University</h2>
+                        </div>
+                    </div>
+                    <p class="footer-desc">A private, non-sectarian educational institution in the Philippines, dedicated to the holistic development of students.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i class="ph-fill ph-facebook-logo"></i></a>
+                        <a href="#" class="social-btn"><i class="ph-fill ph-twitter-logo"></i></a>
+                        <a href="#" class="social-btn"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="#" class="social-btn"><i class="ph-fill ph-youtube-logo"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="footer-heading">Main Campus</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <i class="ph ph-map-pin"></i>
+                            <span>2600 Legarda St., Sampaloc<br>1008 Manila, Philippines</span>
+                        </li>
+                        <li>
+                            <i class="ph ph-phone"></i>
+                            <span>(02) 8734-7371 to 79</span>
+                        </li>
+                        <li>
+                            <i class="ph ph-envelope-simple"></i>
+                            <span>info@arellano.edu.ph</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a><i class="ph ph-caret-right"></i> About Us</a></li>
+                        <li><a><i class="ph ph-caret-right"></i> Academics</a></li>
+                        <li><a><i class="ph ph-caret-right"></i> Admissions</a></li>
+                        <li><a><i class="ph ph-caret-right"></i> Student Affairs</a></li>
+                        <li><a><i class="ph ph-caret-right"></i> Alumni Portal</a></li>
+                        <li><a><i class="ph ph-caret-right"></i> Career Opportunities</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a><i class="ph ph-caret-right"></i> Student Portal (AIMS)</a></li>
+                        <li><a><i class="ph ph-caret-right"></i> Employee Portal</a></li>
+                        <li><a><i class="ph ph-caret-right"></i> LMS (Pegasus)</a></li>
+                        <li class="footer-divider"><a>Data Privacy Policy</a></li>
+                        <li><a>Terms of Use</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Arellano University. All Rights Reserved.</p>
+                <p>Designed for modern educational experiences.</p>
+            </div>
+        </div>
+    </footer>
+        
+    <script>
+        function switchTab(view) {
+            document.querySelectorAll('.section-view').forEach(v => v.classList.remove('active'));
+            const targetView = document.getElementById('view-' + view);
+            if (targetView) targetView.classList.add('active');
+
+            document.querySelectorAll('.sidebar-nav button').forEach(b => b.classList.remove('active'));
+            const targetBtn = document.getElementById('btn-' + view);
+            if (targetBtn) targetBtn.classList.add('active');
+
+            const titleEl = document.getElementById('main-title');
+            const breadcrumbEl = document.getElementById('breadcrumb-current');
+            
+            const titles = {
+                'elem': "Elementary and Junior High School",
+                'shs': "Senior High School",
+                'undergrad': "Undergraduate Programs",
+                'grad': "Florentino Cayco Memorial School Graduate Studies"
+            };
+
+            const breadcrumbs = {
+                'elem': "Elementary and Junior High",
+                'shs': "Senior High School",
+                'undergrad': "Undergraduate",
+                'grad': "Graduate School"
+            };
+
+            if (titles[view]) titleEl.innerText = titles[view];
+            if (breadcrumbs[view]) breadcrumbEl.innerText = breadcrumbs[view];
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

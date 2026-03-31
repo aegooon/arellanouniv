@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Arellano University</title>
+    <link rel="stylesheet" href="admissionsstyle.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo-group">
+                <img src="AU logo.png" alt="Arellano University Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Arellano University</h1>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about us.html">About Us</a>
+                <a href="academics.html">Academics</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="#">News</a>
+                <a href="#">Research</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero-banner">
+        <div class="container">
+            <div class="hero-logo-container">
+                <img src="AU logo.png" alt="AU Seal">
+            </div>
+            <h2>Registration and Admission</h2>
+            <p>School Year 2026 - 2027</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Instructions -->
+        <div class="instructions-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Fill out the form</h3>
+                <p>Provide accurate information in all the required fields. Double-check your contact details for enrollment updates.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Choose your strand</h3>
+                <p>Select your preferred college or tracks. Our guidance counselors are available if you need career advice.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Confirmation</h3>
+                <p>Submit the form and wait for an email confirmation or a call from our admissions officer regarding your schedule.</p>
+            </div>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="registration-box">
+            <form action="#" method="POST" id="admissionForm">
+                
+                <div class="form-section-title">
+                    <i class="ph ph-user-circle"></i> Personal Information
+                </div>
+                
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" placeholder="e.g. Juan" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="e.g. Dela Cruz" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Middle Name</label>
+                        <input type="text" placeholder="Optional">
+                    </div>
+                    <div class="form-group">
+                        <label>Suffix</label>
+                        <select>
+                            <option value="">None</option>
+                            <option value="jr">Jr.</option>
+                            <option value="sr">Sr.</option>
+                            <option value="iii">III</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Date of Birth</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <select required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section-title">
+                    <i class="ph ph-phone"></i> Contact Details
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile Number</label>
+                        <input type="tel" placeholder="09XX XXX XXXX" required>
+                    </div>
+                    <div class="form-group full">
+                        <label>Current Address</label>
+                        <input type="text" placeholder="Street, Barangay, City, Province" required>
+                    </div>
+                </div>
+
+                <div class="form-section-title">
+                    <i class="ph ph-graduation-cap"></i> Academic Preference
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Select Track</label>
+                        <select id="trackSelect" required>
+                            <option value="">Choose Track</option>
+                            <option value="college">College</option>
+                            <option value="academic">Academic Track</option>
+                            <option value="tvl">TVL Track</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Select Strand</label>
+                        <select id="strandSelect" required disabled>
+                            <option value="">Select Track First</option>
+                        </select>
+                    </div>
+                    <div class="form-group full">
+                        <label>Last School Attended</label>
+                        <input type="text" placeholder="Name of your Junior High School" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    Complete Pre-Registration <i class="ph-bold ph-paper-plane-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+<footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- Brand Col -->
+                <div class="footer-brand">
+                    <div class="logo-wrapper">
+                        <div class="logo-icon">
+                            <img src="AU logo.png" alt="Logo" class="logo-img">
+                        </div>
+                        <div class="logo-text">
+                            <h1>Arellano</h1>
+                            <h2>University</h2>
+                        </div>
+                    </div>
+                    <p class="footer-desc">A private, non-sectarian educational institution in the Philippines, dedicated to the holistic development of students.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i class="ph-fill ph-facebook-logo"></i></a>
+                        <a href="#" class="social-btn"><i class="ph-fill ph-twitter-logo"></i></a>
+                        <a href="#" class="social-btn"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="#" class="social-btn"><i class="ph-fill ph-youtube-logo"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="footer-heading">Main Campus</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <i class="ph ph-map-pin"></i>
+                            <span>2600 Legarda St., Sampaloc<br>1008 Manila, Philippines</span>
+                        </li>
+                        <li>
+                            <i class="ph ph-phone"></i>
+                            <span>(02) 8734-7371 to 79</span>
+                        </li>
+                        <li>
+                            <i class="ph ph-envelope-simple"></i>
+                            <span>info@arellano.edu.ph</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a><i class="ph ph-caret-right"></i> About Us</a></li>
+                        <li><a><i class="ph ph-caret-right"></i> Academics</a></li>
+                        <li><a><i class="ph ph-caret-right"></i> Admissions</a></li>
+                        <li><a><i class="ph ph-caret-right"></i> Student Affairs</a></li>
+                        <li><a><i class="ph ph-caret-right"></i> Alumni Portal</a></li>
+                        <li><a><i class="ph ph-caret-right"></i> Career Opportunities</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a><i class="ph ph-caret-right"></i> Student Portal (AIMS)</a></li>
+                        <li><a><i class="ph ph-caret-right"></i> Employee Portal</a></li>
+                        <li><a><i class="ph ph-caret-right"></i> LMS (Pegasus)</a></li>
+                        <li class="footer-divider"><a>Data Privacy Policy</a></li>
+                        <li><a>Terms of Use</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Arellano University. All Rights Reserved.</p>
+                <p>Designed for modern educational experiences.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const strands = {
+        academic: [
+            "STEM (Science, Tech, Engineering, Math)",
+            "ABM (Accountancy & Business)",
+            "HUMSS (Humanities & Social Sciences)",
+            "GAS (General Academic)"
+        ],
+        tvl: [
+            "ICT (Information & Communication Tech)",
+            "Home Economics",
+            "Industrial Arts"
+        ],
+        college: [
+            "Bachelor of Science in Computer Science",
+            "Bachelor of Science in Information Technology",
+            "Bachelor of Science in Business Administration",
+            "Bachelor of Arts in Communication",
+            "Bachelor of Science in Nursing",
+            "Bachelor of Science in Accountancy",
+            "Bachelor of Science in Psychology",
+            "Bachelor of Science in Hospitality Management",
+            "Bachelor of Science in Tourism Management",
+            "Bachelor of Science in Secondary Education"
+        ]
+    };
+        const trackSelect = document.getElementById('trackSelect');
+        const strandSelect = document.getElementById('strandSelect');
+
+        trackSelect.addEventListener('change', function() {
+            const selected = this.value;
+            strandSelect.innerHTML = '<option value="">Select Strand</option>';
+            
+            if (selected) {
+                strandSelect.disabled = false;
+                strands[selected].forEach(strand => {
+                    const option = document.createElement('option');
+                    option.value = strand.toLowerCase().replace(/\s+/g, '-');
+                    option.textContent = strand;
+                    strandSelect.appendChild(option);
+                });
+            } else {
+                strandSelect.disabled = true;
+                strandSelect.innerHTML = '<option value="">Select Track First</option>';
+            }
+        });
+
+        document.getElementById('admissionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = document.querySelector('.btn-submit');
+            btn.innerHTML = 'Submitting... <i class="ph ph-circle-notch"></i>';
+            btn.style.opacity = '0.7';
+            btn.style.pointerEvents = 'none';
+
+            setTimeout(() => {
+                btn.innerHTML = 'Success! <i class="ph ph-check-circle"></i>';
+                btn.style.background = '#10b981';
+                setTimeout(() => {
+                    location.reload();
+                }, 2000);
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
